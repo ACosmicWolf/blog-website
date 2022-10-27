@@ -1,0 +1,219 @@
+@import './colorscheme/catppuccin.scss';
+
+@mixin center-content() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background: $base;
+    color: $rosewater;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: $crust;
+    padding: 10px;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .search {
+        margin-right: 8px;
+        padding: 0;
+        display: flex;
+        form {
+            button,input {
+                text-decoration: none;
+                border: 0;
+                background-color: $subtext1;
+            }
+            button {
+                border-radius: 0 20px 20px 0;
+            }    
+            input {
+                border-radius: 20px 0 0 20px;
+                padding-left: 8px;
+
+                &:focus {
+                    outline: 0;
+                }
+            }
+        }
+
+    }
+
+}
+
+.flex-container {
+    display: flex;
+}
+
+
+.title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.container {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    .trending-card {
+        display: flex;
+        min-height: 15vh;
+        background: $mantle;
+        padding: 20px;
+
+        p {
+            margin-left: 8px;
+            color: $lavender;
+            font-size: 30px;
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+    }
+
+    .cards {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+        .card {
+            padding: 20px;
+            background: $mantle;
+            width: 600px;
+            margin: 10px;
+            .title {
+                color: $lavender;
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                    font-size: 20px;
+                }
+            }
+            .info {
+                margin: 2px;
+                display: flex;
+                justify-content: space-between;
+                .author {
+                    color: $green;
+                    a {
+                        text-decoration: none;
+                        color: inherit;
+                    }
+                }
+            }
+            .views {
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                i {
+                    margin-right: 6px;
+                }
+            }
+        }
+
+    }
+}
+
+
+.form-container {
+    @include center-content();
+    display: flex;
+    flex-direction: column;
+    .form {
+        margin-top: 20%;
+        background: $mantle;
+        padding: 60px;
+        border-radius: 8px;
+        // dropshadow from dropshadow.io 
+        box-shadow:  0px 12px 24px -12px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow:  0px 12px 24px -12px rgba(0, 0, 0, 0.5);
+        
+        h2 {
+            text-align: center;
+            color: $lavender;
+        }
+
+        p {
+            color: $flamingo;
+            a {
+                text-decoration: none;
+                color: $mauve;
+            }
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+
+            input {
+                border: 0;
+                margin: 4px;
+                padding: 8px;
+                border-radius: 4px;
+            }
+
+
+            .form-button-container {
+                display: flex;
+                justify-content: end;
+            }
+            .form-button {
+                background-color: $blue;
+                border: 0;
+                border-radius: 4px;
+                width: 150px;
+                padding: 8px;
+                color: $mantle;
+                margin: 5px;
+            }
+
+        }
+
+    }
+}
+
+
+.username {
+    text-decoration: none;
+    color: $lavender;
+}
+
+.user-popup {
+    position: absolute;
+    background-color: $mantle;
+    padding: 20px;
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 200px;
+
+    .user-popup-item {
+        background-color: $crust;
+        padding: 15px;
+        border-radius: 6px;
+        text-align: center;
+        a {
+            text-decoration: none;
+            color: $maroon;
+        }
+    }
+
+
+
+    
+
+}
+.hidden {
+    display: none;
+}

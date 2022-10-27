@@ -1,0 +1,42 @@
+{% extends "blogs/base.html" %}
+{% load compress %}
+{% load static %}
+
+{% block head %}
+{% compress css %}
+<link type="text/x-scss" href="{% static 'blogs/css/users.scss' %}" rel="stylesheet" media="screen">
+{% endcompress %}
+{% endblock %}
+
+{% block body %}
+
+
+<div id="container">
+    <div class="profile-card">
+        <h1>User Profile</h1>
+        <div class="username">
+            <p>Username:</p>
+            {{user.username}}
+        </div>
+        <div class="email">
+            <p>Email:</p>
+            {{user.email}}
+        </div>
+        <div class="date_joined">
+            <p>Date Joined:</p>
+            {{user.date_joined}}
+        </div>
+        <div class="posts">
+            <p>Posts:</p>
+            {% if posts %}
+                {% for post in posts %}
+                <a href="{% url 'blogs' post.id %}">{{post.title}}</a>
+                {% endfor %}
+            {% else %}
+                <p class="msg">No Posts</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}

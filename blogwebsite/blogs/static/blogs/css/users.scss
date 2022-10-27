@@ -1,0 +1,23 @@
+@import './colorscheme/catppuccin.scss';
+
+@mixin center-content() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    @include center-content();
+    height: 95vh;
+}
+
+.profile-card {
+    width: 60%;
+    height: 80vh;
+    padding: 40px;
+    background-color: $crust;
+    border-radius: 5px;
+    h1 {
+        text-align: center;
+    }
+}

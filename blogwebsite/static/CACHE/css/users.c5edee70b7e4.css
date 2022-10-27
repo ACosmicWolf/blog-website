@@ -1,0 +1,10 @@
+/* line 9, blogs/static/blogs/css/users.scss */
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh; }
+
+/* line 14, blogs/static/blogs/css/users.scss */
+.profile-card {
+  background: #181825; }

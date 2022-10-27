@@ -1,0 +1,28 @@
+{% extends "blogs/base.html" %}
+
+{% block body %}
+
+{% if message %}
+<div>{{ message }}</div>
+{% endif %}
+
+<div class="form-container">
+    <div class="form">
+        <h2>Login</h2>
+        <p>Don't have an account? <a href="{% url 'register' %}">Register here.</a></p>
+    
+    
+    
+        <form class="form-form" action="{% url 'login' %}" method="post">
+            {% csrf_token %}
+                <input type="text" name="username" placeholder="Username">
+                <input type="password" name="password" placeholder="Password">
+                <div class="form-button-container">
+                    <input class="form-button" type="submit" value="Login">
+                </div>
+        </form>
+    </div>
+</div>
+
+
+{% endblock %}

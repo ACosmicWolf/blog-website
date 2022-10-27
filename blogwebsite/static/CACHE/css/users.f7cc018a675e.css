@@ -1,0 +1,12 @@
+/* line 9, blogs/static/blogs/css/users.scss */
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh; }
+
+/* line 14, blogs/static/blogs/css/users.scss */
+.profile-card {
+  padding: 40px;
+  background-color: #11111b;
+  border-radius: 5px; }

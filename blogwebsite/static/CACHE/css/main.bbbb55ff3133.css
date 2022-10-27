@@ -1,0 +1,143 @@
+/* line 9, blogs/static/blogs/css/main.scss */
+body {
+  background: #1e1e2e;
+  color: #f5e0dc;
+  padding: 0;
+  margin: 0; }
+
+/* line 16, blogs/static/blogs/css/main.scss */
+nav {
+  display: flex;
+  justify-content: space-between;
+  background: #11111b;
+  padding: 10px; }
+  /* line 22, blogs/static/blogs/css/main.scss */
+  nav a {
+    text-decoration: none;
+    color: inherit; }
+  /* line 27, blogs/static/blogs/css/main.scss */
+  nav .search {
+    margin-right: 8px;
+    padding: 0;
+    display: flex; }
+    /* line 32, blogs/static/blogs/css/main.scss */
+    nav .search form button, nav .search form input {
+      text-decoration: none;
+      border: 0;
+      background-color: #bac2de; }
+    /* line 37, blogs/static/blogs/css/main.scss */
+    nav .search form button {
+      border-radius: 0 20px 20px 0; }
+    /* line 40, blogs/static/blogs/css/main.scss */
+    nav .search form input {
+      border-radius: 20px 0 0 20px;
+      padding-left: 8px; }
+      /* line 44, blogs/static/blogs/css/main.scss */
+      nav .search form input:focus {
+        outline: 0; }
+
+/* line 54, blogs/static/blogs/css/main.scss */
+.flex-container {
+  display: flex; }
+
+/* line 59, blogs/static/blogs/css/main.scss */
+.title {
+  text-align: center;
+  font-weight: bold; }
+
+/* line 64, blogs/static/blogs/css/main.scss */
+.container {
+  padding: 40px; }
+  /* line 66, blogs/static/blogs/css/main.scss */
+  .container .trending-card {
+    display: flex;
+    min-height: 15vh;
+    background: #181825;
+    padding: 20px; }
+    /* line 72, blogs/static/blogs/css/main.scss */
+    .container .trending-card p {
+      margin-left: 8px;
+      color: #b4befe;
+      font-size: 30px; }
+      /* line 76, blogs/static/blogs/css/main.scss */
+      .container .trending-card p a {
+        text-decoration: none;
+        color: inherit; }
+
+/* line 85, blogs/static/blogs/css/main.scss */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column; }
+  /* line 89, blogs/static/blogs/css/main.scss */
+  .form-container .form {
+    margin-top: 20%;
+    background: #181825;
+    padding: 60px;
+    border-radius: 8px;
+    box-shadow: 0px 12px 24px -12px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 12px 24px -12px rgba(0, 0, 0, 0.5); }
+    /* line 98, blogs/static/blogs/css/main.scss */
+    .form-container .form h2 {
+      text-align: center;
+      color: #b4befe; }
+    /* line 103, blogs/static/blogs/css/main.scss */
+    .form-container .form p {
+      color: #f2cdcd; }
+      /* line 105, blogs/static/blogs/css/main.scss */
+      .form-container .form p a {
+        text-decoration: none;
+        color: #cba6f7; }
+    /* line 111, blogs/static/blogs/css/main.scss */
+    .form-container .form form {
+      display: flex;
+      flex-direction: column; }
+      /* line 115, blogs/static/blogs/css/main.scss */
+      .form-container .form form input {
+        border: 0;
+        margin: 4px;
+        padding: 8px;
+        border-radius: 4px; }
+      /* line 123, blogs/static/blogs/css/main.scss */
+      .form-container .form form .form-button-container {
+        display: flex;
+        justify-content: end; }
+      /* line 127, blogs/static/blogs/css/main.scss */
+      .form-container .form form .form-button {
+        background-color: #89b4fa;
+        border: 0;
+        border-radius: 4px;
+        width: 150px;
+        padding: 8px;
+        color: #181825;
+        margin: 5px; }
+
+/* line 143, blogs/static/blogs/css/main.scss */
+.username {
+  text-decoration: none;
+  color: #b4befe; }
+
+/* line 148, blogs/static/blogs/css/main.scss */
+.user-popup {
+  position: absolute;
+  background-color: #181825;
+  padding: 20px;
+  margin-top: 40px;
+  margin-left: 40px;
+  width: 200px; }
+  /* line 156, blogs/static/blogs/css/main.scss */
+  .user-popup .user-popup-item {
+    background-color: #11111b;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center; }
+    /* line 161, blogs/static/blogs/css/main.scss */
+    .user-popup .user-popup-item a {
+      text-decoration: none;
+      color: #eba0ac; }
+
+/* line 172, blogs/static/blogs/css/main.scss */
+.hidden {
+  display: none; }

@@ -1,0 +1,20 @@
+/* line 9, blogs/static/blogs/css/main.scss */
+body {
+  background: #1e1e2e;
+  color: #f5e0dc; }
+
+/* line 14, blogs/static/blogs/css/main.scss */
+nav {
+  display: flex;
+  justify-content: space-between; }
+  /* line 18, blogs/static/blogs/css/main.scss */
+  nav .search {
+    margin: 0; }
+    /* line 21, blogs/static/blogs/css/main.scss */
+    nav .search input {
+      text-decoration: none;
+      border: 0; }
+    /* line 25, blogs/static/blogs/css/main.scss */
+    nav .search button {
+      text-decoration: none;
+      border: 0; }

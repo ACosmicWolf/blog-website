@@ -1,0 +1,89 @@
+/* line 9, blogs/static/blogs/css/main.scss */
+body {
+  background: #1e1e2e;
+  color: #f5e0dc;
+  padding: 0;
+  margin: 0; }
+
+/* line 16, blogs/static/blogs/css/main.scss */
+nav {
+  display: flex;
+  justify-content: space-between;
+  background: #11111b;
+  padding: 10px; }
+  /* line 22, blogs/static/blogs/css/main.scss */
+  nav .search {
+    margin-right: 8px;
+    padding: 0;
+    display: flex; }
+    /* line 27, blogs/static/blogs/css/main.scss */
+    nav .search form button, nav .search form input {
+      text-decoration: none;
+      border: 0;
+      background-color: #bac2de; }
+    /* line 32, blogs/static/blogs/css/main.scss */
+    nav .search form button {
+      border-radius: 0 20px 20px 0; }
+    /* line 35, blogs/static/blogs/css/main.scss */
+    nav .search form input {
+      border-radius: 20px 0 0 20px;
+      padding-left: 8px; }
+      /* line 39, blogs/static/blogs/css/main.scss */
+      nav .search form input:focus {
+        outline: 0; }
+
+/* line 49, blogs/static/blogs/css/main.scss */
+.flex-container {
+  display: flex; }
+
+/* line 54, blogs/static/blogs/css/main.scss */
+.title {
+  text-align: center;
+  font-weight: bold; }
+
+/* line 59, blogs/static/blogs/css/main.scss */
+.container {
+  padding: 40px; }
+  /* line 61, blogs/static/blogs/css/main.scss */
+  .container .trending-card {
+    display: flex;
+    min-height: 15vh;
+    background: #181825;
+    padding: 20px; }
+    /* line 67, blogs/static/blogs/css/main.scss */
+    .container .trending-card p {
+      margin-left: 8px;
+      color: #b4befe;
+      font-size: 30px; }
+      /* line 71, blogs/static/blogs/css/main.scss */
+      .container .trending-card p a {
+        text-decoration: none;
+        color: inherit; }
+
+/* line 80, blogs/static/blogs/css/main.scss */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column; }
+  /* line 84, blogs/static/blogs/css/main.scss */
+  .register-container .register {
+    margin-top: 20%;
+    background: #181825;
+    padding: 60px;
+    border-radius: 8px;
+    box-shadow: 0px 12px 24px -12px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 12px 24px -12px rgba(0, 0, 0, 0.5); }
+    /* line 93, blogs/static/blogs/css/main.scss */
+    .register-container .register h2 {
+      text-align: center;
+      color: #b4befe; }
+    /* line 98, blogs/static/blogs/css/main.scss */
+    .register-container .register form {
+      display: flex;
+      flex-direction: column; }
+      /* line 102, blogs/static/blogs/css/main.scss */
+      .register-container .register form .register-button {
+        background-color: #89b4fa;
+        border: 0; }
