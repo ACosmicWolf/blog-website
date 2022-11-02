@@ -1,0 +1,11 @@
+{% extends 'blogs/base.html' %}
+
+{% block body %}
+{% if result %}
+{% for r in result %}
+<a href="{% url 'blogs' r.slug %}">{{r.title}}</a>
+{% endfor %}
+{% else %}
+<p>No Results</p>
+{% endif %}
+{% endblock %}

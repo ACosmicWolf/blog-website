@@ -1,0 +1,17 @@
+/* line 3, blogs/static/blogs/css/createblog.scss */
+.createBlogWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 100vh; }
+
+/* line 10, blogs/static/blogs/css/createblog.scss */
+.createBlogForm {
+  display: flex;
+  flex-direction: column;
+  width: 60%; }
+
+/* line 15, blogs/static/blogs/css/createblog.scss */
+.fieldWrapper {
+  display: flex;
+  flex-direction: column; }

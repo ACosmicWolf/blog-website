@@ -1,0 +1,82 @@
+/* line 9, blogs/static/blogs/css/main.scss */
+body {
+  background: #1e1e2e;
+  color: #f5e0dc;
+  padding: 0;
+  margin: 0; }
+
+/* line 16, blogs/static/blogs/css/main.scss */
+.message {
+  width: 100%;
+  background-color: #eba0ac;
+  opacity: 0.7;
+  padding: 20px;
+  color: #94e2d5; }
+
+/* line 24, blogs/static/blogs/css/main.scss */
+nav {
+  display: flex;
+  justify-content: space-between;
+  background: #11111b;
+  padding: 10px; }
+  /* line 30, blogs/static/blogs/css/main.scss */
+  nav a {
+    text-decoration: none;
+    color: inherit; }
+  /* line 35, blogs/static/blogs/css/main.scss */
+  nav .search {
+    margin-right: 8px;
+    padding: 0;
+    display: flex; }
+    /* line 40, blogs/static/blogs/css/main.scss */
+    nav .search form button, nav .search form input {
+      text-decoration: none;
+      border: 0;
+      background-color: #bac2de; }
+    /* line 45, blogs/static/blogs/css/main.scss */
+    nav .search form button {
+      border-radius: 0 20px 20px 0; }
+    /* line 48, blogs/static/blogs/css/main.scss */
+    nav .search form input {
+      border-radius: 20px 0 0 20px;
+      padding-left: 8px; }
+      /* line 52, blogs/static/blogs/css/main.scss */
+      nav .search form input:focus {
+        outline: 0; }
+
+/* line 62, blogs/static/blogs/css/main.scss */
+.flex-container {
+  display: flex; }
+
+/* line 67, blogs/static/blogs/css/main.scss */
+.title {
+  text-align: center;
+  font-weight: bold; }
+
+/* line 76, blogs/static/blogs/css/main.scss */
+.username {
+  text-decoration: none;
+  color: #b4befe; }
+
+/* line 81, blogs/static/blogs/css/main.scss */
+.user-popup {
+  position: absolute;
+  background-color: #181825;
+  padding: 20px;
+  margin-top: 40px;
+  margin-left: 40px;
+  width: 200px; }
+  /* line 89, blogs/static/blogs/css/main.scss */
+  .user-popup .user-popup-item {
+    background-color: #11111b;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center; }
+    /* line 94, blogs/static/blogs/css/main.scss */
+    .user-popup .user-popup-item a {
+      text-decoration: none;
+      color: #eba0ac; }
+
+/* line 105, blogs/static/blogs/css/main.scss */
+.hidden {
+  display: none; }

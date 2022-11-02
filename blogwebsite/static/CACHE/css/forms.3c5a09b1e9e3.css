@@ -1,0 +1,46 @@
+/* line 3, blogs/static/blogs/css/forms.scss */
+.form-container {
+  display: flex;
+  flex-direction: column; }
+  /* line 6, blogs/static/blogs/css/forms.scss */
+  .form-container .form {
+    margin-top: 20%;
+    background: #181825;
+    padding: 60px;
+    border-radius: 8px;
+    box-shadow: 0px 12px 24px -12px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 12px 24px -12px rgba(0, 0, 0, 0.5); }
+    /* line 15, blogs/static/blogs/css/forms.scss */
+    .form-container .form h2 {
+      text-align: center;
+      color: #b4befe; }
+    /* line 20, blogs/static/blogs/css/forms.scss */
+    .form-container .form p {
+      color: #f2cdcd; }
+      /* line 22, blogs/static/blogs/css/forms.scss */
+      .form-container .form p a {
+        text-decoration: none;
+        color: #cba6f7; }
+    /* line 28, blogs/static/blogs/css/forms.scss */
+    .form-container .form form {
+      display: flex;
+      flex-direction: column; }
+      /* line 32, blogs/static/blogs/css/forms.scss */
+      .form-container .form form input {
+        border: 0;
+        margin: 4px;
+        padding: 8px;
+        border-radius: 4px; }
+      /* line 40, blogs/static/blogs/css/forms.scss */
+      .form-container .form form .form-button-container {
+        display: flex;
+        justify-content: end; }
+      /* line 44, blogs/static/blogs/css/forms.scss */
+      .form-container .form form .form-button {
+        background-color: #89b4fa;
+        border: 0;
+        border-radius: 4px;
+        width: 150px;
+        padding: 8px;
+        color: #181825;
+        margin: 5px; }

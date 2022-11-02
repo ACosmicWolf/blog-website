@@ -1,0 +1,25 @@
+/* line 9, blogs/static/blogs/css/users.scss */
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh; }
+
+/* line 14, blogs/static/blogs/css/users.scss */
+.profile-card {
+  width: 60%;
+  height: 80vh;
+  padding: 40px;
+  background-color: #11111b;
+  border-radius: 5px; }
+  /* line 20, blogs/static/blogs/css/users.scss */
+  .profile-card h1 {
+    text-align: center; }
+  /* line 23, blogs/static/blogs/css/users.scss */
+  .profile-card div {
+    display: flex;
+    align-items: center; }
+
+/* line 29, blogs/static/blogs/css/users.scss */
+.label {
+  font-weight: 300; }

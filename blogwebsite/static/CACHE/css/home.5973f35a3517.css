@@ -1,0 +1,95 @@
+/* line 4, blogs/static/blogs/css/home.scss */
+.container {
+  padding: 40px;
+  display: flex;
+  flex-direction: column; }
+  /* line 8, blogs/static/blogs/css/home.scss */
+  .container .trending-card {
+    display: flex;
+    min-height: 15vh;
+    background: #181825;
+    padding: 20px; }
+    /* line 14, blogs/static/blogs/css/home.scss */
+    .container .trending-card p {
+      margin-left: 8px;
+      color: #b4befe;
+      font-size: 30px; }
+      /* line 18, blogs/static/blogs/css/home.scss */
+      .container .trending-card p a {
+        text-decoration: none;
+        color: inherit; }
+  /* line 25, blogs/static/blogs/css/home.scss */
+  .container .cards {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    /* line 31, blogs/static/blogs/css/home.scss */
+    .container .cards .card {
+      padding: 20px;
+      background: #181825;
+      width: 600px;
+      margin: 10px; }
+      /* line 36, blogs/static/blogs/css/home.scss */
+      .container .cards .card .title {
+        color: #b4befe; }
+        /* line 38, blogs/static/blogs/css/home.scss */
+        .container .cards .card .title a {
+          text-decoration: none;
+          color: inherit;
+          font-size: 20px; }
+      /* line 44, blogs/static/blogs/css/home.scss */
+      .container .cards .card .info {
+        margin: 2px;
+        display: flex;
+        justify-content: space-between; }
+        /* line 48, blogs/static/blogs/css/home.scss */
+        .container .cards .card .info .author {
+          color: #a6e3a1; }
+          /* line 50, blogs/static/blogs/css/home.scss */
+          .container .cards .card .info .author a {
+            text-decoration: none;
+            color: inherit; }
+      /* line 56, blogs/static/blogs/css/home.scss */
+      .container .cards .card .views {
+        display: flex;
+        justify-content: end;
+        align-items: center; }
+        /* line 60, blogs/static/blogs/css/home.scss */
+        .container .cards .card .views i {
+          margin-right: 6px; }
+
+/* line 70, blogs/static/blogs/css/home.scss */
+.trending-card .card {
+  padding: 20px;
+  background: #181825;
+  width: 600px;
+  margin: 10px; }
+  /* line 75, blogs/static/blogs/css/home.scss */
+  .trending-card .card .title {
+    color: #b4befe; }
+    /* line 77, blogs/static/blogs/css/home.scss */
+    .trending-card .card .title a {
+      text-decoration: none;
+      color: inherit;
+      font-size: 20px; }
+  /* line 83, blogs/static/blogs/css/home.scss */
+  .trending-card .card .info {
+    margin: 2px;
+    display: flex;
+    justify-content: space-between; }
+    /* line 87, blogs/static/blogs/css/home.scss */
+    .trending-card .card .info .author {
+      color: #a6e3a1; }
+      /* line 89, blogs/static/blogs/css/home.scss */
+      .trending-card .card .info .author a {
+        text-decoration: none;
+        color: inherit; }
+  /* line 95, blogs/static/blogs/css/home.scss */
+  .trending-card .card .views {
+    display: flex;
+    justify-content: end;
+    align-items: center; }
+    /* line 99, blogs/static/blogs/css/home.scss */
+    .trending-card .card .views i {
+      margin-right: 6px; }

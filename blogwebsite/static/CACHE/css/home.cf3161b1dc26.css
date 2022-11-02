@@ -1,0 +1,49 @@
+/* line 4, blogs/static/blogs/css/home.scss */
+.container {
+  padding: 40px;
+  display: flex;
+  flex-direction: column; }
+  /* line 9, blogs/static/blogs/css/home.scss */
+  .container .cards {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    /* line 14, blogs/static/blogs/css/home.scss */
+    .container .cards .trending-card {
+      max-width: 100%;
+      position: absolute; }
+    /* line 18, blogs/static/blogs/css/home.scss */
+    .container .cards .card {
+      padding: 20px;
+      background: #181825;
+      width: 600px;
+      margin: 10px; }
+      /* line 23, blogs/static/blogs/css/home.scss */
+      .container .cards .card .title {
+        color: #b4befe; }
+        /* line 25, blogs/static/blogs/css/home.scss */
+        .container .cards .card .title a {
+          text-decoration: none;
+          color: inherit;
+          font-size: 20px; }
+      /* line 31, blogs/static/blogs/css/home.scss */
+      .container .cards .card .info {
+        margin: 2px;
+        display: flex;
+        justify-content: space-between; }
+        /* line 35, blogs/static/blogs/css/home.scss */
+        .container .cards .card .info .author {
+          color: #a6e3a1; }
+          /* line 37, blogs/static/blogs/css/home.scss */
+          .container .cards .card .info .author a {
+            text-decoration: none;
+            color: inherit; }
+      /* line 43, blogs/static/blogs/css/home.scss */
+      .container .cards .card .views {
+        display: flex;
+        justify-content: end;
+        align-items: center; }
+        /* line 47, blogs/static/blogs/css/home.scss */
+        .container .cards .card .views i {
+          margin-right: 6px; }

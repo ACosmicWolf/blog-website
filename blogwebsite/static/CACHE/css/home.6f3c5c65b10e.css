@@ -1,0 +1,50 @@
+/* line 4, blogs/static/blogs/css/home.scss */
+.container {
+  padding: 40px;
+  display: flex;
+  flex-direction: column; }
+  /* line 9, blogs/static/blogs/css/home.scss */
+  .container .cards {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+
+/* line 17, blogs/static/blogs/css/home.scss */
+.card {
+  padding: 20px;
+  background: #181825;
+  width: 600px;
+  margin: 10px; }
+  /* line 22, blogs/static/blogs/css/home.scss */
+  .card .title {
+    color: #b4befe; }
+    /* line 24, blogs/static/blogs/css/home.scss */
+    .card .title a {
+      text-decoration: none;
+      color: inherit;
+      font-size: 20px; }
+  /* line 30, blogs/static/blogs/css/home.scss */
+  .card .info {
+    margin: 2px;
+    display: flex;
+    justify-content: space-between; }
+    /* line 34, blogs/static/blogs/css/home.scss */
+    .card .info .author {
+      color: #a6e3a1; }
+      /* line 36, blogs/static/blogs/css/home.scss */
+      .card .info .author a {
+        text-decoration: none;
+        color: inherit; }
+  /* line 42, blogs/static/blogs/css/home.scss */
+  .card .views {
+    display: flex;
+    justify-content: end;
+    align-items: center; }
+    /* line 46, blogs/static/blogs/css/home.scss */
+    .card .views i {
+      margin-right: 6px; }
+
+/* line 52, blogs/static/blogs/css/home.scss */
+.trending-card {
+  width: min-content; }

@@ -1,0 +1,28 @@
+/* line 3, blogs/static/blogs/css/createblog.scss */
+.createBlogWrapper {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/* line 10, blogs/static/blogs/css/createblog.scss */
+.createBlogForm {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 40px;
+  background-color: #11111b;
+  border-radius: 6px; }
+
+/* line 18, blogs/static/blogs/css/createblog.scss */
+.fieldWrapper {
+  display: flex;
+  flex-direction: column; }
+  /* line 22, blogs/static/blogs/css/createblog.scss */
+  .fieldWrapper .label {
+    font-size: larger; }
+  /* line 26, blogs/static/blogs/css/createblog.scss */
+  .fieldWrapper .blogTitle > input {
+    border-radius: 20px;
+    border: none;
+    padding: 10px; }

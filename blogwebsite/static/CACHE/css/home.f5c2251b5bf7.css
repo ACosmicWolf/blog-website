@@ -1,0 +1,87 @@
+/* line 4, blogs/static/blogs/css/home.scss */
+.container {
+  padding: 40px;
+  display: flex;
+  flex-direction: column; }
+  /* line 9, blogs/static/blogs/css/home.scss */
+  .container .cards {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    /* line 15, blogs/static/blogs/css/home.scss */
+    .container .cards .card {
+      padding: 20px;
+      background: #181825;
+      width: 600px;
+      margin: 10px; }
+      /* line 20, blogs/static/blogs/css/home.scss */
+      .container .cards .card .title {
+        color: #b4befe; }
+        /* line 22, blogs/static/blogs/css/home.scss */
+        .container .cards .card .title a {
+          text-decoration: none;
+          color: inherit;
+          font-size: 20px; }
+      /* line 28, blogs/static/blogs/css/home.scss */
+      .container .cards .card .info {
+        margin: 2px;
+        display: flex;
+        justify-content: space-between; }
+        /* line 32, blogs/static/blogs/css/home.scss */
+        .container .cards .card .info .author {
+          color: #a6e3a1; }
+          /* line 34, blogs/static/blogs/css/home.scss */
+          .container .cards .card .info .author a {
+            text-decoration: none;
+            color: inherit; }
+      /* line 40, blogs/static/blogs/css/home.scss */
+      .container .cards .card .views {
+        display: flex;
+        justify-content: end;
+        align-items: center; }
+        /* line 44, blogs/static/blogs/css/home.scss */
+        .container .cards .card .views i {
+          margin-right: 6px; }
+
+/* line 52, blogs/static/blogs/css/home.scss */
+.trending_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  /* line 56, blogs/static/blogs/css/home.scss */
+  .trending_container .trending-card {
+    padding: 20px;
+    background: #181825;
+    width: 90%;
+    margin: 10px;
+    display: flex;
+    min-height: 15vh; }
+    /* line 63, blogs/static/blogs/css/home.scss */
+    .trending_container .trending-card .title {
+      color: #b4befe; }
+      /* line 65, blogs/static/blogs/css/home.scss */
+      .trending_container .trending-card .title a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 20px; }
+    /* line 71, blogs/static/blogs/css/home.scss */
+    .trending_container .trending-card .info {
+      margin: 2px;
+      display: flex;
+      justify-content: space-between; }
+      /* line 75, blogs/static/blogs/css/home.scss */
+      .trending_container .trending-card .info .author {
+        color: #a6e3a1; }
+        /* line 77, blogs/static/blogs/css/home.scss */
+        .trending_container .trending-card .info .author a {
+          text-decoration: none;
+          color: inherit; }
+    /* line 83, blogs/static/blogs/css/home.scss */
+    .trending_container .trending-card .views {
+      display: flex;
+      justify-content: end;
+      align-items: center; }
+      /* line 87, blogs/static/blogs/css/home.scss */
+      .trending_container .trending-card .views i {
+        margin-right: 6px; }

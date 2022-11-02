@@ -1,0 +1,31 @@
+@import './colorscheme/catppuccin.scss';
+
+.createBlogWrapper {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.createBlogForm {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 40px;
+    background-color: $crust;
+    border-radius: 6px;
+}
+.fieldWrapper {
+    display: flex;
+    flex-direction: column;
+
+    .label {
+        font-size: larger;
+    }
+
+    .blogTitle > input {
+        border: none;
+        padding: 10px;
+    }
+
+}

@@ -1,0 +1,16 @@
+/* line 3, blogs/static/blogs/css/createblog.scss */
+.createBlogWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/* line 9, blogs/static/blogs/css/createblog.scss */
+.createBlogForm {
+  display: flex;
+  flex-direction: column;
+  width: 60%; }
+
+/* line 14, blogs/static/blogs/css/createblog.scss */
+.fieldWrapper {
+  display: flex;
+  flex-direction: column; }
