@@ -1,0 +1,54 @@
+@import './colorscheme/catppuccin.scss';
+
+
+.container {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+
+    .cards {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+.card {
+    padding: 20px;
+    background: $mantle;
+    width: 600px;
+    margin: 10px;
+    .title {
+        color: $lavender;
+        a {
+            text-decoration: none;
+            color: inherit;
+            font-size: 20px;
+        }
+    }
+    .info {
+        margin: 2px;
+        display: flex;
+        justify-content: space-between;
+        .author {
+            color: $green;
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+    }
+    .views {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        i {
+            margin-right: 6px;
+        }
+    }
+}
+
+.trending-card {
+    width: auto;
+}

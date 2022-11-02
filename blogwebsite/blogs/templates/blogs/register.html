@@ -1,5 +1,12 @@
 {% extends "blogs/base.html" %}
+{% load compress %}
+{% load static %}
 
+{% block head %}
+{% compress css %}
+<link type="text/x-scss" href="{% static 'blogs/css/forms.scss' %}" rel="stylesheet" media="screen">
+{% endcompress %}
+{% endblock %}
 {% block body %}
 
 {% if message %}

@@ -1,25 +1,39 @@
 {% extends "blogs/base.html" %}
+{% load compress %}
+{% load static %}
 
+{% block head %}
+{% compress css %}
+<link type="text/x-scss" href="{% static 'blogs/css/home.scss' %}" rel="stylesheet" media="screen">
+{% endcompress %}
+{% endblock %}
 {% block body %}
 
 <h1 class="title">The Blog</h1>
 
 <div class="container">
+
+    {% if mostViewed %}
+    <div class="trending_container">
         <p>Most Viewed Page</p>
-        <div class="trending-card">
-            <div>
-                <p><a id="page-link" href="##">How To Add Scss to Django</a></p>
-                <div class="description">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum quibusdam modi ea odio eaque enim qui officia ab quas, quam perspiciatis debitis aliquid reprehenderit ullam autem dicta quidem consequuntur nostrum.
-                </div>
-                <div class="views"><i class="fa-light fa-eye"></i> 10</div>
+    <div class="trending-card card">
+            <div class="title">
+                <a href="{% url 'blogs' mostViewed.slug %}">{{mostViewed.title}}</a>
             </div>
+            <div class="info">
+                <div class="author"><a href="{% url 'users' mostViewed.author.username %}">{{mostViewed.author.username}}</a></div>
+                <div class="date_added">{{mostViewed.date_added}}</div>
+            </div>
+            <div class="views"><i class="fa-light fa-eye fa-2xs"></i><span>{{mostViewed.views}}</span></div>
         </div>
+    </div>
+    {% endif %}
+    <p>Blogs</p>
     <div class="cards">
     {% for card in cards %}
         <div class="card">
             <div class="title">
-                <a href="{% url 'blogs' card.id %}}">{{card.title}}</a>
+                <a href="{% url 'blogs' card.slug %}">{{card.title}}</a>
             </div>
             <div class="info">
                 <div class="author"><a href="{% url 'users' card.author.username %}">{{card.author.username}}</a></div>

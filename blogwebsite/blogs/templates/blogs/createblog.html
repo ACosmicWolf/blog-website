@@ -1,12 +1,45 @@
 {% extends "blogs/base.html" %}
+{% load compress %}
+{% load static %}
 
+{% block head %}
+{% compress css %}
+<link type="text/x-scss" href="{% static 'blogs/css/createblog.scss' %}" rel="stylesheet" media="screen">
+{% endcompress %}
+{% endblock %}
 {% block body %}
 
-<form method="post">
-    {% csrf_token %}
-    <input type="text" name="title" placeholder="Title">
-    <textarea name="content" cols="30" rows="5"></textarea>
-    <input type="submit" value="Submit">
-</form>
+<div class="createBlogWrapper">
+    <form method="post" class="createBlogForm">
+        {% csrf_token %}
+        <div class="fieldWrapper">
+            {{ form.title.errors }}
+            <div class="label">
+                {{ form.title.label_tag }}
+            </div>
+            <div class="blogTitle">
+                {{ form.title }}
+            </div>
+        </div>
+        <div class="fieldWrapper">
+            {{ form.description.errors }}
+            <div class="label">
+                {{ form.description.label_tag }}
+            </div>
+            <div class="textBox">
+                {{ form.description }}
+            </div>
+        </div>
+        <div class="fieldWrapper">
+            {{ form.tags.errors }}
+            <div class="label">
+                {{ form.tags.label_tag }}
+            </div>
+            <ul id="tags">{{ form.tags }}</ul>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
 
 {% endblock %}

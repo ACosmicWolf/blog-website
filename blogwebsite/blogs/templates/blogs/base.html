@@ -30,8 +30,8 @@
 
        <div class="flex-container">
         <div class="search">
-            <form>
-                <input type="text"/><button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <form >
+                <input type="text" name="q"/><button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
         </div>
         {% if user.is_authenticated %}
@@ -61,12 +61,20 @@
 
 
     <script>
+
+        function hidemessage() {
+            document.querySelector('.message').classList.add('hidden')
+        }
+
         let user_popup = document.querySelector('.user-popup');
         let profile = document.querySelector('.username');
 
         profile.addEventListener("click",() => {
             user_popup.classList.toggle('hidden')
         });
+
+
+
     </script>
 
 </body>

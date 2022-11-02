@@ -15,22 +15,23 @@
     <div class="profile-card">
         <h1>User Profile</h1>
         <div class="username">
-            <p>Username:</p>
-            {{user.username}}
+            <p class="label">Username:</p>
+            <span class="info">{{user.username}}</span>
         </div>
         <div class="email">
             <p>Email:</p>
             {{user.email}}
         </div>
         <div class="date_joined">
-            <p>Date Joined:</p>
-            {{user.date_joined}}
+            <p class="label">Date Joined:</p>
+            <span class="info">{{user.date_joined}}
+            </span>
         </div>
         <div class="posts">
             <p>Posts:</p>
             {% if posts %}
                 {% for post in posts %}
-                <a href="{% url 'blogs' post.id %}">{{post.title}}</a>
+                <a href="{% url 'blogs' post.slug %}">{{post.title}} <span>{{post.views}} views</span></a>
                 {% endfor %}
             {% else %}
                 <p class="msg">No Posts</p>

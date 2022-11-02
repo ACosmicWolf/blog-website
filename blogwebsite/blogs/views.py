@@ -1,18 +1,24 @@
-from django.shortcuts import render,HttpResponseRedirect
+import re
+from django.shortcuts import render,HttpResponseRedirect,HttpResponse,redirect,get_object_or_404
 from django.contrib.auth import authenticate, login, logout
 from django.urls import reverse
 from django.db import IntegrityError
-import datetime
+from django.template.defaultfilters import slugify
 
-
+from blogs.forms import BlogForm
 from .models import User,Blog
-
 from . import utils
+
+from django.db.models import Max
+
 # Create your views here.
 def home(request):
     blogs = Blog.objects.all()
-    return render(request,"blogs/home.html",{"cards":blogs})
-
+    try:
+        mostViewed = Blog.objects.filter(views=Blog.objects.all().aggregate(Max('views')).get('views__max'))[0]
+    except:
+        mostViewed=None
+    return render(request,"blogs/home.html",{"cards":blogs,"mostViewed":mostViewed})
 
 def login_view(request):
     if request.method == "POST":
@@ -66,28 +72,29 @@ def register(request):
 
 def createblog(request):
     if request.method == "POST":
-        title = request.POST['title']
-        content = request.POST['content']
-        current_user = request.user
-        model = Blog(
-            title=title,
-            date_added=datetime.datetime.now(),
-            author=current_user
-        )
-        model.save()
-        utils.save_entry(title,content)
-        return render(request,"blogs/home.html",{"message":"Blog Has Been Saved."})
+        form = BlogForm(request.POST)
+        if form.is_valid():
+            utils.save_entry(form.cleaned_data['title'],form.cleaned_data['description'])
+            newBlog = Blog(
+                title = form.cleaned_data['title'],
+                slug = slugify(form.cleaned_data['title']),
+                author = request.user,
+                tags = form.cleaned_data['tags']
+            )
+            newBlog.save()
+            ## form.save(commit=False)
+            ## TODO: Tags ##form.save_m2m()
+        return redirect('/')
     else:
-        return render(request,'blogs/createblog.html')
+        form = BlogForm()
+        return render(request,'blogs/createblog.html',{"form":form})
 
-def viewblog(request, blog):
-    blog = Blog.objects.get(id=blog)
+def viewblog(request, slug):
+    blog = Blog.objects.get(slug=slug)
     title = blog.title
-    print(blog.views)
     blog.views=blog.views+1
     blog.save()
     content = utils.get_entry(title)
-    print(content)
     return render(request,"blogs/viewblog.html",{"title":title,"content":content})
 
 def userprofile(request, username):
@@ -97,3 +104,10 @@ def userprofile(request, username):
     except:
         posts = None
     return render(request,"blogs/users.html",{"user":user,"posts":posts})
+
+def search(request, query):
+    try:
+        result = Blog.objects.filter(title=query)
+    except:
+        result=None
+    return render(request,"blogs/search.html",{"result":result})

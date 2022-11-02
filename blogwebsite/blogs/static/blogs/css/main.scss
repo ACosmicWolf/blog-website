@@ -13,6 +13,26 @@ body {
     margin: 0;
 }
 
+.message {
+    max-width: 100%;
+    background-color: $maroon;
+    opacity: 0.7;
+    padding: 20px;
+    color: $base;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+
+    button {
+        border: none;
+        background: inherit;
+        color: inherit;
+        font-size: x-large;
+        cursor: pointer;
+    }
+
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -61,128 +81,8 @@ nav {
     font-weight: bold;
 }
 
-.container {
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    .trending-card {
-        display: flex;
-        min-height: 15vh;
-        background: $mantle;
-        padding: 20px;
-
-        p {
-            margin-left: 8px;
-            color: $lavender;
-            font-size: 30px;
-            a {
-                text-decoration: none;
-                color: inherit;
-            }
-        }
-    }
-
-    .cards {
-        margin-top: 20px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        
-        .card {
-            padding: 20px;
-            background: $mantle;
-            width: 600px;
-            margin: 10px;
-            .title {
-                color: $lavender;
-                a {
-                    text-decoration: none;
-                    color: inherit;
-                    font-size: 20px;
-                }
-            }
-            .info {
-                margin: 2px;
-                display: flex;
-                justify-content: space-between;
-                .author {
-                    color: $green;
-                    a {
-                        text-decoration: none;
-                        color: inherit;
-                    }
-                }
-            }
-            .views {
-                display: flex;
-                justify-content: end;
-                align-items: center;
-                i {
-                    margin-right: 6px;
-                }
-            }
-        }
-
-    }
-}
 
 
-.form-container {
-    @include center-content();
-    display: flex;
-    flex-direction: column;
-    .form {
-        margin-top: 20%;
-        background: $mantle;
-        padding: 60px;
-        border-radius: 8px;
-        // dropshadow from dropshadow.io 
-        box-shadow:  0px 12px 24px -12px rgba(0, 0, 0, 0.5);
-        -webkit-box-shadow:  0px 12px 24px -12px rgba(0, 0, 0, 0.5);
-        
-        h2 {
-            text-align: center;
-            color: $lavender;
-        }
-
-        p {
-            color: $flamingo;
-            a {
-                text-decoration: none;
-                color: $mauve;
-            }
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-
-            input {
-                border: 0;
-                margin: 4px;
-                padding: 8px;
-                border-radius: 4px;
-            }
-
-
-            .form-button-container {
-                display: flex;
-                justify-content: end;
-            }
-            .form-button {
-                background-color: $blue;
-                border: 0;
-                border-radius: 4px;
-                width: 150px;
-                padding: 8px;
-                color: $mantle;
-                margin: 5px;
-            }
-
-        }
-
-    }
-}
 
 
 .username {

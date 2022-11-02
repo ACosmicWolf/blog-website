@@ -1,9 +1,16 @@
 {% extends "blogs/base.html" %}
+{% load compress %}
+{% load static %}
 
+{% block head %}
+{% compress css %}
+<link type="text/x-scss" href="{% static 'blogs/css/forms.scss' %}" rel="stylesheet" media="screen">
+{% endcompress %}
+{% endblock %}
 {% block body %}
 
 {% if message %}
-<div>{{ message }}</div>
+<div class="message"><p>{{ message }}</p><button onclick="hidemessage()">X</button></div>
 {% endif %}
 
 <div class="form-container">
